@@ -1,0 +1,397 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A New Computer — Anthony Valdez</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        –black: #000;
+        –gray: #7d7e7f;
+        –bg: #f5f4f1;
+      }
+
+      body {
+        background: var(–bg);
+        color: var(–black);
+        font-family:
+          ‘Courier New’,
+          Courier,
+          monospace;
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 48px 24px 96px;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      .page {
+        max-width: 640px;
+        margin: 0 auto;
+      }
+
+      /* — HEADER — */
+
+      header {
+        margin-bottom: 48px;
+      }
+
+      h1 {
+        font-size: 15px;
+        font-weight: normal;
+        margin-bottom: 8px;
+      }
+
+      .name {
+        font-size: 14px;
+      }
+
+      .meta {
+        color: var(–gray);
+        font-size: 13px;
+      }
+
+      /* — SECTIONS — */
+
+      section {
+        margin-bottom: 36px;
+      }
+
+      h2 {
+        font-size: 13px;
+        font-weight: normal;
+        margin-bottom: 16px;
+        margin-top: 8px;
+      }
+
+      p {
+        margin-bottom: 12px;
+      }
+
+      /* — SPEC TABLES (dl/dt/dd) — */
+
+      .spec {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        gap: 0;
+        margin: 16px 0;
+        font-size: 13px;
+      }
+
+      .spec dt {
+        color: var(–gray);
+        padding: 4px 0;
+      }
+
+      .spec dd {
+        padding: 4px 0;
+      }
+
+      @media (max-width: 500px) {
+        .spec {
+          grid-template-columns: 100px 1fr;
+        }
+      }
+
+      /* — LINKS — */
+
+      a {
+        color: var(–black);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 1px;
+        text-decoration-color: var(–gray);
+      }
+
+      a:hover {
+        text-decoration-color: var(–black);
+      }
+
+      /* — CREDITS (floating metadata block) — */
+
+      .credits {
+        margin: 16px 0 20px;
+        font-size: 13px;
+      }
+
+      .credits p {
+        margin-bottom: 2px;
+      }
+
+      /* — RATE TYPOGRAPHIC MOMENT — */
+
+      .rate-number {
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1.1;
+        margin: 8px 0 2px;
+      }
+
+      .rate-unit {
+        color: var(–gray);
+        font-size: 12px;
+        margin-bottom: 16px;
+      }
+
+      /* — QUESTIONS — */
+
+      .questions {
+        list-style: none;
+      }
+
+      .questions li {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        gap: 0;
+        padding: 4px 0;
+        font-size: 14px;
+      }
+
+      .questions .num {
+        color: var(–gray);
+      }
+
+      /* — CTA — */
+
+      .cta {
+        margin-top: 40px;
+        padding: 24px 0;
+        border-top: 1px solid #ddd9ce;
+        border-bottom: 1px solid #ddd9ce;
+        text-align: left;
+      }
+
+      .cta a.reply {
+        display: inline-block;
+        padding: 12px 20px;
+        border: 1px solid var(–black);
+        text-decoration: none;
+        font-size: 13px;
+        background: var(–black);
+        color: #fff;
+        margin-right: 4px;
+        margin-bottom: 8px;
+      }
+
+      .cta a.reply:hover {
+        background: var(–gray);
+        border-color: var(–gray);
+      }
+
+      .cta-note {
+        font-size: 12px;
+        color: var(–gray);
+        margin-top: 12px;
+      }
+
+      /* — FOOTER — */
+
+      footer {
+        margin-top: 48px;
+        color: var(–gray);
+        font-size: 13px;
+      }
+
+      footer a {
+        color: var(–gray);
+        text-decoration-color: var(–gray);
+      }
+
+      .notes {
+        color: var(–gray);
+        font-size: 12px;
+        line-height: 1.7;
+      }
+
+      .notes p {
+        margin-bottom: 4px;
+      }
+
+      /* — INTRO, RATIONALE, CLOSING (warm paragraphs) — */
+
+      .intro {
+        margin-bottom: 32px;
+      }
+
+      .intro p {
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      .rationale {
+        margin-top: 14px;
+        font-size: 13px;
+        line-height: 1.7;
+        color: var(–black);
+      }
+
+      .closing {
+        margin-top: 48px;
+        margin-bottom: 8px;
+        font-size: 13px;
+        color: var(–gray);
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <h1>A New Computer</h1>
+        <p class="name">Anthony Valdez</p>
+        <p class="meta">avennui &nbsp; April 2026</p>
+      </header>
+
+      <section class="intro">
+        <p>
+          Mom, Michelle, Aaron &mdash; thank you for offering to help me with a
+          new computer. I want to take you up on it. It&rsquo;s harder to ask
+          for than I expected, so I wrote it down to be clear about what I need
+          and why.
+        </p>
+      </section>
+
+      <section>
+        <h2>
+          S &nbsp;I &nbsp;T &nbsp;U &nbsp;A &nbsp;T &nbsp;I &nbsp;O &nbsp;N
+        </h2>
+        <p>
+          My iMac Pro is from 2017. Apple is phasing out support for Intel Macs.
+          The machine is slow to the point where tasks that should take 30
+          minutes take seven hours. I&rsquo;ve been using work computers for
+          years but don&rsquo;t have access to one right now, and not having my
+          own machine has become a real handicap on work I&rsquo;m in the middle
+          of that deserves to keep moving.
+        </p>
+      </section>
+
+      <section>
+        <h2>M &nbsp;A &nbsp;C &nbsp;H &nbsp;I &nbsp;N &nbsp;E</h2>
+        <p>Dedicated machine for video editing and AI work.</p>
+
+        <dl class="spec">
+          <dt>UNIT</dt>
+          <dd>
+            <a
+              href="https://www.apple.com/shop/buy-mac/macbook-pro/16-inch-space-black-standard-display-apple-m5-max-chip-18-core-cpu-40-core-gpu-64gb-memory-2tb-storage"
+              target="_blank"
+              rel="noopener"
+              >MacBook Pro 16-inch</a
+            >
+          </dd>
+          <dt>CHIP</dt>
+          <dd>M5 Max, 18-core CPU, 40-core GPU</dd>
+          <dt>MEMORY</dt>
+          <dd>64GB</dd>
+          <dt>STORAGE</dt>
+          <dd>2TB</dd>
+          <dt>COST</dt>
+          <dd>$3,899</dd>
+        </dl>
+
+        <div class="notes">
+          <p>
+            Optional:
+            <a
+              href="https://www.caldigit.com/thunderbolt-5-dock/"
+              target="_blank"
+              rel="noopener"
+              >CalDigit TS5 Plus</a
+            >
+            Thunderbolt 5 dock. $499. Can come later.
+          </p>
+          <p>
+            AppleCare covered through AppleCare One. Case on me. Monitor,
+            drives, cables, basic stand, software &mdash; already have.
+          </p>
+        </div>
+
+        <p class="rationale">
+          I don&rsquo;t want to skimp on the specs &mdash; I want it to last. I
+          don&rsquo;t know exactly where my work is headed over the next few
+          years, but I want a computer that&rsquo;ll still be working for me
+          when I figure it out.
+        </p>
+      </section>
+
+      <section>
+        <h2>T &nbsp;I &nbsp;M &nbsp;I &nbsp;N &nbsp;G</h2>
+        <dl class="spec">
+          <dt>START</dt>
+          <dd>As soon as approved</dd>
+          <dt>SOURCE</dt>
+          <dd>
+            <a
+              href="https://www.apple.com/retail/worldtradecenter/"
+              target="_blank"
+              rel="noopener"
+              >Apple Store, World Trade Center</a
+            >
+          </dd>
+          <dt>DELIVERY</dt>
+          <dd>Same-day to 1&ndash;2 days</dd>
+        </dl>
+        <p class="rationale">
+          If you&rsquo;re good with it, I can walk into Apple today.
+        </p>
+      </section>
+
+      <section>
+        <h2>
+          T &nbsp;E &nbsp;L &nbsp;G &nbsp;O &nbsp;R &nbsp;I &nbsp;T &nbsp;H
+          &nbsp;M
+        </h2>
+        <p>
+          Michelle mentioned in passing this could go through Telgorithm.
+          Putting it on the table: if that works for you, Aaron, I&rsquo;d do
+          video editing work for the company over the next year and repay any
+          shortfall personally.
+        </p>
+
+        <div class="credits">
+          <p>Lead Editor, Telfar TV / Everything But the World</p>
+          <p>Editor, El Planeta, dir. Amalia Ulman (Sundance 2021)</p>
+          <p>Ryan Trecartin / Wu Tsang / DIS</p>
+          <p>Torso Solutions &mdash; Mugler, Burberry x SSENSE</p>
+        </div>
+
+        <p>
+          Editing only &mdash; not a photographer, DP, or producer. Telgorithm
+          would front any production side. Flexible on whatever structure works
+          for your accounting. If it doesn&rsquo;t fit, skip it.
+        </p>
+      </section>
+
+      <section class="closing">
+        <p>
+          However you want to handle it works for me. If this isn&rsquo;t the
+          right time or not doable, tell me that &mdash; that&rsquo;s okay too.
+        </p>
+        <p>Thank you for even offering. It isn&rsquo;t lost on me.</p>
+      </section>
+
+      <div class="cta">
+        <a
+          class="reply"
+          href="mailto:avennui@gmail.com?subject=Re%3A%20A%20New%20Computer"
+          >Reply</a
+        >
+        <a class="reply" href="sms:+19092247278">Text me</a>
+      </div>
+
+      <footer>
+        <p>
+          <a href="mailto:avennui@gmail.com">avennui@gmail.com</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="tel:+19092247278">+1.909.224.7278</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
